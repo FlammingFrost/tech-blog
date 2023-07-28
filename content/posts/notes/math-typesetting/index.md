@@ -72,3 +72,13 @@ Inline math: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\)
 $$
  \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
 $$ -->
+
+## math inline example
+
+$a^2 + b^2 = c^2$
+
+## math block example
+
+$$
+a^2 + b^2 = c^2
+$$

@@ -1,6 +1,6 @@
 ---
 title: "Reinforcement Learning"
-summary: "This is a summary of the SUBsection. It will appear at the top of the page."
-description: "This is the subsection's meta description and a fallback if no summary is added."
+summary: "Learning Log of Reinforcement Learning. Notes, code, and more."
+description: "Description of Reinforcement Learning not yet written."
 url : "/posts/reinforce/"
 ---

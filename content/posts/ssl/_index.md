@@ -1,7 +1,7 @@
 ---
 title: "Self/Semi-supervised Learning"
-summary: "This is a summary of the subsection. It will appear at the top of the page."
-description: "This is the subsection's meta description and a fallback if no summary is added."
+summary: "Learning Log of Self/Semi-supervised Learning. Notes, code, and more."
+description: "Description of Self/Semi-supervised Learning not yet written."
 url : "/posts/ssl/"
 ---
 

@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://flammingfrost.github.io/tech-blog/'
 languageCode = 'en-us'
 title = "FF's Learning Blog"
 # this is overwrite by cofig/_default/*

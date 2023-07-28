@@ -1,14 +1,15 @@
 ---
 title: '"See Also" and "Read Next" Demo'
-seo_title: '"See Also" and "Read Next" Demo'
+seo_title: '"See Also" and "Read Next" Demo seo_title'
 summary: 'Sample article showcasing the "See Also" and "Read Next" features.'
 description: 'Sample article showcasing the "See Also" and "Read Next" features.'
 slug: see-also-read-next
 author: John Doe
+math: false
 
 draft: false
 date: 2020-11-17T21:21:46-05:00
-lastmod: 
+lastmod: 2023-11-17T21:21:46-05:00
 expiryDate: 
 publishDate: 
 
