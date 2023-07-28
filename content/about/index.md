@@ -1,6 +1,6 @@
 ---
 type: about
-title: Hi, my name is Hugo.
+title: Hi, my name is FlammingFrost.
 seo_title: About
 description: Learn more about my background and experience.
 ---

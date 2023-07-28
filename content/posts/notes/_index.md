@@ -1,7 +1,7 @@
 ---
-title: "Subsection 3"
+title: "Notes"
 summary: "Summary test"
 description: "Description test."
-url: "/posts/subsection3/"
+url: "/posts/notes/"
 ---
 

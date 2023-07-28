@@ -5,6 +5,7 @@ summary: A brief guide to setting up KaTeX.
 description: A brief guide to setting up KaTeX.
 slug: math-typesetting
 author: John Doe
+math: true
 
 draft: false
 date: 2020-11-16T21:21:46-05:00

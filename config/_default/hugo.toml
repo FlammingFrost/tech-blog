@@ -1,7 +1,7 @@
 ### General
 baseURL = 'https://flammingfrost.github.io/tech-blog/' # Enter your full production URL
 languageCode = 'en-us' # Default
-timeZone = 'America/New_York' # IANA timezone https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timeZone = 'Asia/Chongqing' # IANA timezone https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 title = "FlammingFrost's Learning Log" # Site title used throughout site
 
 ### SEO, Analytics & 3rd-party
@@ -16,6 +16,7 @@ buildDrafts = false # Default
 buildExpired = false # Default 
 buildFuture = false # Default
 canonifyURLs = false # Default
+math = true
 defaultContentLanguage = 'en' # Default
 disableAliases = true # Set to true if using server (Netlify, .htaccess) for redirects instead of Hugo
 disableKinds = [] # Default
