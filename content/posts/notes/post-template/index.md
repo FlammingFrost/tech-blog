@@ -1,8 +1,8 @@
 ---
 title: Post Template
 seo_title: Post Template
-summary: A brief guide to post template.
-description: A brief guide to post template.
+summary: Summary shown on the post list.
+description: A brief guide to post template. # not sure about the usage
 slug: post-template
 author: FlammingFrost
 math: true # set to true to enable KaTeX rendering
@@ -60,12 +60,12 @@ In this example we will be using [KaTeX](https://katex.org/).
 {{</ math.inline >}} -->
 
 # Markdown Syntax
-## H1
-### H2
-#### H3
-##### H4
-###### H5
-####### H6
+# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
 
 ## Emphasis
 

@@ -109,7 +109,7 @@
 [[main]]
     identifier = "homepage"
     name = "Homepage - FF"
-    url = "/categories/"
+    url = "https://flammingfrost.github.io"
     parent = "other"
     weight = 7
 
