@@ -8,8 +8,8 @@ author: FlammingFrost
 math: true # set to true to enable KaTeX rendering
 
 draft: false # set to false to publish
-date: 2020-11-16T21:21:46-05:00
-lastmod: 2023-11-16 # both date and lastmod will show in the post's footer
+date: 2023-07-28
+lastmod: 2023-07-29 # both date and lastmod will show in the post's footer
 
 feature_image:
 feature_image_alt:
@@ -143,22 +143,7 @@ $$
 - $Q_\pi(s,a)$ caluculate the expect return of an agent picking action $a$ while in state $s$, under policy $\pi$.
 - Optimal action-value function evaluates the value of an action. Independent of policy.
 - State-value function evaluates the "value" of a state. Under a specific policy.
-- $ \mathbb{E}_S[V_{ \pi }(S)] $ can be use to evaluate the performance of poilicy $ \pi $
-
-
-$$
-\mathbb{E}_{S} V^{\pi}\_{\pi}(S)
-$$
-
-$$
-[V_{\pi}(S)]
-$$
-
-- $\mathbb{E}_S[V_a(S)]$
-- $T_{\pi}$
-- $[V_{\pi}(S)]$
-- $\mathbb{E}_S$
-- $ \$ $
+- $\mathbb{E}_S[V\_{\pi}(S)]$ can be use to evaluate the performance of poilicy $ \pi $
 
 
 

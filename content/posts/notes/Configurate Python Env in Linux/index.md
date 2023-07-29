@@ -27,9 +27,9 @@ newsletter: false # set to true to enable Newsletter section, at the bottom of t
 disable_comments: false # set to true to disable comments for a specific post
 ---
 
-# SSH server setup
+## SSH server setup
 
-## Connect to server
+### Connect to server
 
 > This part is specific for server of Department of Statistics, SUSTech. It could be different for other servers.
 
@@ -43,7 +43,7 @@ Using vscode to connect to server is recommended.
 
    Try to enter one of the folder to check if you have successfully connected to server. You can use GUI provided by vscode to check the files in server. Or you can use `ls` command to check the files in terminal.
 
-## Setup ssh key to avoid password input
+### Setup ssh key to avoid password input
 
 > If you don't set up ssh key, you need to input password every time you connect to server. It is annoying.
 
@@ -73,23 +73,23 @@ Using vscode to connect to server is recommended.
 
   Save the file. Then you should be able to connect to server without password.
 
-# Python environment setup
+## Python environment setup
 
 In this article, I will use Virtualenv to manage python environment. It is a simple and easy-to-use tool. You can also use Anaconda to manage python environment.
 
-## Install Virtualenv & Virtualenvwrapper
+### Install Virtualenv & Virtualenvwrapper
 
 Use `pip install virtualenv` to install Virtualenv.
 
 Use `pip install virtualenvwrapper` to install Virtualenvwrapper.
 
-## Configurate Virtualenvwrapper
+### Configurate Virtualenvwrapper
 
-### If you server is finely configured
+#### If you server is finely configured
 
 You can directly use `mkvirtualenv env_name` to create a new environment.
 
-### Setup Virtualenvwrapper
+#### Setup Virtualenvwrapper
 
 If above command output `mkvirtualenv: command not found`, you need to setup Virtualenvwrapper.
 
@@ -128,15 +128,15 @@ If above command output `mkvirtualenv: command not found`, you need to setup Vir
   
   to check if the path is set correctly. If the path is set correctly, you can use `mkvirtualenv env_name` to create a new environment.
 
-## Manage python environment
+### Manage python environment
 
-### Create a new environment
+#### Create a new environment
 
 - Use `mkvirtualenv env_name` to create a new environment. 
 - Use `mkvirtualenv -p python3 env_name` to create a new environment with python3.
 - Use `mkvirtualenv -P /usr/bin/python3 env_name` to create a new environment with python3. The path of python3 is `/usr/bin/python3`.
 
-### Enter an environment
+#### Enter an environment
 
 - Use `workon env_name` to enter an environment.
 - Use `source `/.virtualenvs/env_name/bin/activate` to enter an environment.
@@ -145,22 +145,22 @@ If above command output `mkvirtualenv: command not found`, you need to setup Vir
   - Install Python Environments extension in vscode (intall on server).
   - Click the bottom left corner of vscode. Then you can see the GUI provided by Virtualenvwrapper. Click the environment you want to enter.
 
-### Exit an environment
+#### Exit an environment
 
 - Use `deactivate` to exit an environment.
 - Click the bottom left corner of vscode. Then you can see the GUI provided by Virtualenvwrapper. Click the `deactivate` button.
 
-### Delete an environment
+#### Delete an environment
 
 - Use `rmvirtualenv env_name` to delete an environment.
 
-### List all environments
+#### List all environments
 
 - Use `lsvirtualenv` to list all environments.
 
-# Setup A Python Environment for a git project
+## Setup A Python Environment for a git project
 
-## Create a new environment
+### Create a new environment
 
 1. Enter the folder of the project.
 
