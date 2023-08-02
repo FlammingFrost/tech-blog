@@ -1,7 +1,7 @@
 ---
 title: 'Reinfroce Learning Note 1: Basic Notion'
 seo_title: 'RL Note 1: Basic Notion'
-summary: Summary shown on the post list.
+summary: Basic notion in reinforce learning. Agent, state, action, policy, reward, state transition and value function.
 description: A brief guide to post template. # not sure about the usage
 slug: self-learn-log1
 author: FlammingFrost
@@ -29,6 +29,8 @@ newsletter: false # set to true to enable Newsletter section, at the bottom of t
 disable_comments: false # set to true to disable comments for a specific post
 ---
 
+# Note 1: Basic Notion in Reinforce Learning
+
 Credit:
 
 王树森 [深度强化学习网课](https://youtube/vmkRMvhCW5c)
@@ -36,7 +38,6 @@ Credit:
 [强化学习笔记 - 贝尔曼方程（Bellman Equation） - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/381821556?utm_id=0)
 
 
-# Note 1: Basic Notion in Reinforce Learning
 
 ## Agent
 
