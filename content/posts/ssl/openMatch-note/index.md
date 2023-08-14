@@ -7,7 +7,7 @@ slug: openMatchNote
 author: FlammingFrost
 math: true # set to true to enable KaTeX rendering
 
-draft: true # set to false to publish
+draft: false # set to false to publish
 date: 2023-08-03
 lastmod: 2023-11-16 # both date and lastmod will show in the post's footer
 
@@ -32,6 +32,8 @@ disable_comments: false # set to true to disable comments for a specific post
 ---
 
 # OpenMatch: Learn a Outlier Dectector to Enhance FixMatch
+
+Paper: [OpenMatch: Open-set Consistency Regularization for Semi-supervised Learning with Outliers](https://arxiv.org/abs/2105.14148)
 
 > The Related work section is not finished yet.
 
