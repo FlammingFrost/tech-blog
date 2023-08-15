@@ -1,7 +1,7 @@
 ---
 title: Portfolio Project 1
 seo_title: Portfolio Project 1
-summary: Portfolio Project 1 is my first portfolio project.
+summary: There hasn't been any project added yet.
 description: Portfolio Project 1 is my first portfolio project.
 slug: portfolio-project-1
 author: John Doe
