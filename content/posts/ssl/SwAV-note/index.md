@@ -42,11 +42,9 @@ SeLa: [Self-labelling via simultaneous clustering and representation learning](h
 
 ## Introduction
 
-## Related Work
-
 ### Instance and Contrastive Learning
 
-> Compare different view of the same image.
+> Compare different views of the same image.
 
 Unsupervised learning tries to learn a representation of data (etc. images) without the use of manual annotataions. In previous study, contrastive learning has been proved to be a powerful method to learn a good representation. It usually minimizes the difference between positive pairs (explicitly) and maximizes the difference between negative pairs (sometimes implicitly). 
 

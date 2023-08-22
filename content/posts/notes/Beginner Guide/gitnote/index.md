@@ -3,7 +3,7 @@ title: Git Command Guide
 seo_title: Git Command Guide
 summary: Some common and useful git commands.
 description:
-slug: gitnote
+slug: bg/gitnote
 author: FlammingFrost
 math: false # set to true to enable KaTeX rendering
 
@@ -19,7 +19,7 @@ categories:
 tags:
   - git
 series: 
-  - Experience sharing
+  - Beginner's Guide
 toc: true # set to true to enable a Table of Contents
 related: true # set to true to enable Related Posts section
 social_share: true # set to true to enable Social Sharing buttons

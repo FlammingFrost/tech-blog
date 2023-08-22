@@ -3,7 +3,7 @@ title: Create A Site by Hugo
 seo_title: Create A Site by Hugo
 summary: Setting up a Hugo site. Some details and tips.
 description:
-slug: create-a-site
+slug: bg/create-a-site
 author: FlammingFrost
 math: true # set to true to enable KaTeX rendering
 
@@ -19,7 +19,7 @@ categories:
 tags:
   - Hugo
 series: 
-  - Experience sharing
+  - Beginner's Guide
 toc: true # set to true to enable a Table of Contents
 related: true # set to true to enable Related Posts section
 social_share: true # set to true to enable Social Sharing buttons

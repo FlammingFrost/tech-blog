@@ -25,6 +25,7 @@ related: true
 social_share: true
 newsletter: true
 disable_comments: false
+enableEmoji: true
 ---
 
 Emoji can be enabled in a Hugo project in a number of ways.

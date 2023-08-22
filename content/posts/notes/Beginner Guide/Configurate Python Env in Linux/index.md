@@ -3,7 +3,7 @@ title: Configurate Python Env in Linux
 seo_title: Config Pyenv in Linux
 summary: Configurate Python Env in Linux. Using Virtualenv.
 description:
-slug: config-py
+slug: bg/config-py
 author: FlammingFrost
 math: false # set to true to enable KaTeX rendering
 
@@ -19,7 +19,7 @@ categories:
 tags:
   - Linux
 series: 
-  - Experience sharing
+  - Beginner's Guide
 toc: true # set to true to enable a Table of Contents
 related: true # set to true to enable Related Posts section
 social_share: true # set to true to enable Social Sharing buttons
