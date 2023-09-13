@@ -1,7 +1,7 @@
 ---
-title: Configurate Python Env in Linux
-seo_title: Config Pyenv in Linux
-summary: Configurate Python Env in Linux. Using Virtualenv.
+title: Coding Python in Linux Server
+seo_title: Coding Python in Linux Server
+summary: Configurate Python Env. in Linux. Connect to server with VSCode.
 description:
 slug: bg/config-py
 author: FlammingFrost
@@ -18,6 +18,7 @@ categories:
   - 
 tags:
   - Linux
+  - Server
 series: 
   - Beginner's Guide
 toc: true # set to true to enable a Table of Contents
@@ -26,54 +27,79 @@ social_share: true # set to true to enable Social Sharing buttons
 newsletter: false # set to true to enable Newsletter section, at the bottom of the page
 disable_comments: false # set to true to disable comments for a specific post
 ---
+# Configurate Python Environment in Linux
 
-## SSH server setup
+If you are a machine learning learner, for example a PhD student, you may need to use a server to train your model. In this article, I will introduce how to connect to server with vscode and how to setup python environment in server.
+
+---
+
+## Part I: SSH server setup
+
+Technically, you can use **any** software to connect to server. Consider the convenience for ML learner to code and debug, I recommend to use vscode to connect to server. It is easy to use and has a lot of useful extensions. (i.e. Remote SSH, Python Environments, etc.)
 
 ### Connect to server
 
-> This part is specific for server of Department of Statistics, SUSTech. It could be different for other servers.
+To connect to server, you need to know the address and port of server. You also need to know the username and password of server, which is usually provided by the administrator of server.
 
-Using vscode to connect to server is recommended.
+To check the validity of the address and port, first try to connect to server in VSCode. Type in the top bar of vscode:
+  
+  ```vscode
+  ssh username@address -p port_number
+  ```
+  then press `Enter`. If you can connect to server, you will be asked to input password. (Otherwise, you will get an error message.)
 
-1. Install Remote SSH extension in vscode. It is usually installed by automatically when you first time connect to server.
-
-2. Open vscode, press `F1` and type `Remote-SSH: Connect to Host...`. Then type `ssh username@server_address` to connect to server. In SUStech, use `ssh root@address -p port` to connect to server. The address and port should be provided by the administrator of server.
-
-3. After connected to server, you can use vscode as a local editor. You can also use terminal in vscode to run commands in server.
-
-   Try to enter one of the folder to check if you have successfully connected to server. You can use GUI provided by vscode to check the files in server. Or you can use `ls` command to check the files in terminal.
+After that, you should be free to explore the files and folders in server.
 
 ### Setup ssh key to avoid password input
 
-> If you don't set up ssh key, you need to input password every time you connect to server. It is annoying.
+> It can be annoying to input password every time you connect to server. You can setup ssh key to avoid password input. The key concept is to copy your public key to server. Then server can recognize you without password.
 
-1. Generate ssh key in local machine. 
+1. Generate your ssh key in local machine. 
 
-  Use `ssh-keygen` command to generate ssh key. The default path is `~/.ssh/id_rsa`. You can change the path if you want.
+  Use `ssh-keygen` command in cmd to generate ssh key. The default path is `~/.ssh/id_rsa`. You can change the path if you want, just follow the instructions.
+
+  The command will generate two files: `id_rsa` and `id_rsa.pub`. The former is your private key, which should be kept secret. The latter is your public key, which can be shared to others. We will upload the public key to server.
 
 2. Copy the public key to server.
 
-  In local machine, use `ssh-copy-id username@server_address` to copy the public key to server. You need to input password of server. After that, you can connect to server without password.
+  a. Login in your server. Enter `/root/.ssh/` folder. If your server does not have `.ssh` folder, you can create one.
 
-  For example, in SUSTech, use `ssh-copy-id root@address -p port` to copy the public key to server.
+  ```bash
+  ssh localhost # Login in your server
+  ```
+  
+  b. Concatenate the content of `id_rsa.pub` to `authorized_keys` file:
+  
+  ```bash
+  cat id_rsa.pub >> authorized_keys
+  ```
+  This command will append the content of `id_rsa.pub` to `authorized_keys` file. If `authorized_keys` does not exist, it will create a new file.
 
-  > If you want to connect to server with different username, you need to generate ssh key for each username.
+  c. Change the permission. First, enter `/root` folder. Then change the permission of `.ssh` folder and `authorized_keys` file.
+
+  ```bash
+  chmod 700 .ssh
+  chmod 600 .ssh/authorized_keys
+  ```
 
 3. Setting in vscode
 
-  Enter `~/.ssh/config` in vscode. Add the following content to the file.
+  Edit the file `~/.ssh/config` in vscode. (Or click the bottom left corner of vscode `Open a Remotew Window`. Then click the `Connect to Host`. Then click the `Configure SSH Hosts...` button. Then click the `~/.ssh/config` button.)
 
+  Add the following content to the file.
   ```bash
   Host server_name
       HostName server_address
       User username
       Port port
-      IdentityFile ~/.ssh/id_rsa # The path of private key
+      IdentityFile ~/.ssh/id_rsa # The path of private key, use the private key (not public key)
   ```
 
   Save the file. Then you should be able to connect to server without password.
 
-## Python environment setup
+---
+
+## Part II: Python Environment Setup
 
 In this article, I will use Virtualenv to manage python environment. It is a simple and easy-to-use tool. You can also use Anaconda to manage python environment.
 
@@ -85,9 +111,7 @@ Use `pip install virtualenvwrapper` to install Virtualenvwrapper.
 
 ### Configurate Virtualenvwrapper
 
-#### If you server is finely configured
-
-You can directly use `mkvirtualenv env_name` to create a new environment.
+If you server is finely configured, you can should be able to directly use `mkvirtualenv env_name` to create a new environment.
 
 #### Setup Virtualenvwrapper
 
@@ -103,9 +127,9 @@ If above command output `mkvirtualenv: command not found`, you need to setup Vir
 
 3. Set the path of Virtualenvwrapper.
 
-  Enter `~/.bashrc` in vscode. 
+  Find the file `~/.bashrc`. You can use
   
-  `vim ~/.bashrc` or `nano ~/.bashrc`, here I use `vim` to edit the file.
+  `vim ~/.bashrc` or `nano ~/.bashrc` to edit the file, here I use `vim`.
   
   Add the following content to the file. You can add it at the end of the file.
 
@@ -113,7 +137,7 @@ If above command output `mkvirtualenv: command not found`, you need to setup Vir
 
   ```bash
   export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3 # The path of python3
-  export WORKON_HOME=/usr/local/bin/virtualenv # Set the path of virtualenv
+  export WORKON_HOME=/usr/local/bin/virtualenv # Set the path of virtualenv, this is the path where the virtualenv will be created
   source /usr/local/bin/virtualenvwrapper.sh # The path of virtualenvwrapper, which is obtained in step 2
   ```
 
@@ -158,9 +182,11 @@ If above command output `mkvirtualenv: command not found`, you need to setup Vir
 
 - Use `lsvirtualenv` to list all environments.
 
-## Setup A Python Environment for a git project
+---
 
-### Create a new environment
+## Setup New Environment for Experiment
+
+### Create a new environment according to the requirements.txt
 
 1. Enter the folder of the project.
 
