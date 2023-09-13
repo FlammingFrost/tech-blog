@@ -1,5 +1,5 @@
 ---
-title: Cross Entropy
+title: "Entropy, KL Divergence and Cross Entropy"
 seo_title: Cross Entropy
 summary: Cross entropy is a loss function used in classification problems. This post will introduce the definition and the intuition behind cross entropy.
 description: A brief guide to post template. # not sure about the usage
@@ -31,207 +31,64 @@ newsletter: false # set to true to enable Newsletter section, at the bottom of t
 disable_comments: false # set to true to disable comments for a specific post
 ---
 
-Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.
+## Introduction
 
-In this example we will be using [KaTeX](https://katex.org/).
+Entropy discussed here is different from the entropy in thermodynamics. Entropy in thermodynamics is a measure of the disorder of a system. Entropy in information theory is a measure of the **uncertainty** of a random variable, or the **average information** of a random variable.
 
-- Create a partial under `/layouts/partials/math.html`.
-- Within this partial reference the [Auto-render Extension](https://katex.org/docs/autorender.html) or host these scripts locally.
-- Include the partial in your templates like so:  
+For Machine-Learning learners, if you are not interested in the mathematical details, you can skip the next two sections and go to the section of "Cross Entropy".
 
-```go-html-template
-{{ if or .Params.math .Site.Params.math }}
-{{ partial "math.html" . }}
-{{ end }}
-```
+## Entropy
 
-- To enable KaTex globally set the parameter `math` to `true` in a project's configuration.
-- To enable KaTex on a per page basis include the parameter `math: true` in content files.
-
-**Note:** Use the online reference of [Supported TeX Functions](https://katex.org/docs/supported.html)
-
-<!-- {{< math.inline >}}
-{{ if or .Page.Params.math .Site.Params.math }} -->
-<!-- KaTeX -->
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-{{ end }}
-{{</ math.inline >}} -->
-
-# Markdown Syntax
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
-
-## Emphasis
-
-`*italic*` *italic*
-
-`_italic_` _italic_
-
-`**bold**` **bold**
-
-`__bold__` __bold__
-
-`~~strikethrough~~` ~~strikethrough~~
-
-## Lists
-
-### Unordered
-
-`* Item 1` * Item 1
-`* Item 2` * Item 2
-`* Item 3` * Item 3
-
-### Ordered
-
-`1. Item 1` 1. Item 1
-`2. Item 2` 2. Item 2
-`3. Item 3` 3. Item 3
-
-## Links
-
-`[Link](https://example.com)` [Link](https://example.com)
-
-`[Link with title](https://example.com "Example Title")` [Link with title](https://example.com "Example Title")
-
-## Images
-
-`![Image](image.jpg)` 
-
-![Image](ai.jpg)
-
-`![Image with title](ai.jpg "Example Title(ai.jpg)")` 
-
-![Image with title](ai.jpg "Example Title(ai.jpg)")
-
-## Code
-
-### Inline
-
-`Inline code` Inline code
-
-### Block
-
-```
-Block code
-```
-
-## Tables
-
-```
-| Header 1 | Header 2 |
-| -------- | -------- |
-| Cell 1   | Cell 2   |
-| Cell 3   | Cell 4   |
-```
-
-| Header 1 | Header 2 |
-| -------- | -------- |
-| Cell 1   | Cell 2   |
-| Cell 3   | Cell 4   |
-
-## Blockquotes
-
-`> Blockquote`
-
-> Blockquote
-
-## Horizontal Rules
-
-`---`
-
----
-
-## Footnotes
-
-`[^1]` [^1]
-
-`[^1]: Footnote text.`
-
-shown at the bottom of the page.
-
-[^1]: Footnote text.
-
-## Abbreviations
-
-`The HTML specification is maintained by the W3C.`
-The HTML specification is maintained by the W3C.
-
-`*[HTML]: Hyper Text Markup Language`
-*[HTML]: Hyper Text Markup Language
-
-`The HTML specification is maintained by the W3C.`
-The HTML specification is maintained by the W3C.
-
-## Definition Lists
-
-```
-Term 1
-: Definition 1
-
-Term 2
-: Definition 2
-```
-
-Term 1
-: Definition 1
-
-Term 2
-: Definition 2
-
-## Task Lists
-
-```
-- [x] Task 1
-- [x] Task 2
-- [ ] Task 3
-```
-
-- [x] Task 1
-- [x] Task 2
-- [ ] Task 3
-
-## Emoji
-
-```
-:smile:
-```
-
-:smile:
-for more emoji codes visit [Emoji Cheat Sheet](https://www.webfx.com/tools/emoji-cheat-sheet/)
-## Subscript and Superscript
-
-`H~2~O` H~2~O
-
-`X^2^` X^2^
-
-## Inserted and Deleted Text
-
-`++Inserted++` ++Inserted++
-
-`~~Deleted~~` ~~Deleted~~
-
-## Math 
-
-### inline
-
-`$a^2 + b^2 = c^2$` $a^2 + b^2 = c^2$
-
-### block
-
-```
+[Entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory)) is a measure of the "self-inofrmation". It is defined as:
 $$
-a^2 + b^2 = c^2
+H(X) = -\sum_{x\in X}p(x)\log p(x)
 $$
-```
+where $X$ is a random variable, $p(x)$ is the probability of $x$.
 
-$$
-a^2 + b^2 = c^2
-$$
+### Intuition
+As mentioned, entropy is a measure of the uncertainty of a random variable. The more uncertain the random variable is, the higher the entropy is.
 
-# This is the end of the post
+: Example1 - Consider a coin and a 6-face dice. The coin has two outcomes, head and tail, each with probability $0.5$. The dice has six outcomes, each with probability $1/6$. The entropy of the coin is:
+$$
+H(\text{coin}) = -0.5\log 0.5 - 0.5\log 0.5 = 1
+$$
+The entropy of the dice is:
+$$
+H(\text{dice}) = -\frac{1}{6}\log{\frac{1}{6}}\times 6 = 2.58
+$$
+The entropy of the dice is higher than the entropy of the coin, which means the dice is more uncertain than the coin.
+
+: Example2 - Consider a biased coin with probability $p$ of head and $1-p$ of tail. The entropy of the biased coin is:
+$$
+H(\text{biased coin}) = -p\log p - (1-p)\log(1-p)
+$$
+draw the entropy of the biased coin as a function of $p$:
+![Binary Entropy Function](binary-entropy-func.png)
+That's what we expect for the uncertainty of a biased coin. If the coin is fair, we can not tell which outcome it will be, so the entropy is high. If the coin is biased, we can tell which outcome it will be, so the entropy is low.
+
+The concept of "information" related to entropy is abstract, and I afraid my explanation is not clear enough. You can refer to the Wikipedia page for more details.
+
+## KL Divergence
+
+[Kullback-Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence) is a measure of the difference between two probability distributions. It is defined as:
+$$
+D_{KL}(P||Q) = \sum_{x\in X}p(x)\log\frac{p(x)}{q(x)}
+$$
+where $P$ and $Q$ are two probability distributions, $p(x)$ and $q(x)$ are the probabilities of $x$ in $P$ and $Q$ respectively.
+
+## Cross Entropy
+
+In machine-learning, cross-entropy is used to measure the difference between two probability distributions. It is defined as:
+$$
+H(P, Q) = -\sum_{x\in X}p(x)\log q(x)
+$$
+where $P$ and $Q$ are two probability distributions, $p(x)$ and $q(x)$ are the probabilities of $x$ in $P$ and $Q$ respectively.
+
+### Some explanations
+**Q1**: The loss is asymentric, can we swap $P$ and $Q$?
+
+**A1**: No. 1. If we compare true *binary* labels with predicted *binary* labels, $\log (0)$ is met. 
+
+**Q2**: Why do we use cross-entropy loss for binary classification and not mean squared error?
+**A2**: Placing the true labels at $p(x)$ can greatly simplify the calculation of the gradient. (See [this post](https://stackoverflow.com/questions/41990250/why-do-we-use-cross-entropy-loss-for-binary-classification-and-not-mean-squared) for more details.)
+
