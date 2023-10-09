@@ -9,7 +9,7 @@ math: false # set to true to enable KaTeX rendering
 
 draft: false # set to false to publish
 date: 2023-07-28
-lastmod:  2023-09-13 # both date and lastmod will show in the post's footer
+lastmod:  2023-10-09 # both date and lastmod will show in the post's footer
 
 feature_image:
 feature_image_alt:
@@ -130,6 +130,8 @@ If above command output `mkvirtualenv: command not found`, you need to setup Vir
   Find the file `~/.bashrc`. You can use
   
   `vim ~/.bashrc` or `nano ~/.bashrc` to edit the file, here I use `vim`.
+
+  (You can also use vscode to edit the file)
   
   Add the following content to the file. You can add it at the end of the file.
 
@@ -156,9 +158,11 @@ If above command output `mkvirtualenv: command not found`, you need to setup Vir
 
 #### Create a new environment
 
+Note that you can only create python version that you have installed. For example, if you want to install a virtual environment of python 3.7, you need to install python 3.7 first.
+
 - Use `mkvirtualenv env_name` to create a new environment. 
 - Use `mkvirtualenv -p python3 env_name` to create a new environment with python3.
-- Use `mkvirtualenv -P /usr/bin/python3 env_name` to create a new environment with python3. The path of python3 is `/usr/bin/python3`.
+- Use `mkvirtualenv -P /usr/bin/python3 env_name` to create a new environment with python3. The path of python3 is `/usr/bin/python3`. It will create an environment having the same python version as you provided.
 
 #### Enter an environment
 
@@ -196,6 +200,12 @@ If above command output `mkvirtualenv: command not found`, you need to setup Vir
 
 4. Use `pip install -r requirements.txt` to install the packages in `requirements.txt`. This is usually provided by the project.
 
+---
 
+Reference:
+
+[1] https://www.cnblogs.com/doublexi/p/15783355.html
+
+[2] https://blog.csdn.net/qq_42571592/article/details/122902266
  
 

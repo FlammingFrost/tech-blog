@@ -32,15 +32,17 @@ disable_comments: false # set to true to disable comments for a specific post
 ---
 
 # How to Evaluate the Performance of ML Models
- Machine learning basically have 2 tasks: regression and classification. This post will introduce how to evaluate the performance of ML models in these 2 tasks.
+ Machine learning basically have 2 tasks: regression and classification. This post will introduce how to evaluate the performance of ML models in some classes.
 
-## Regression
+ ---
+
+## Task1: Regression
 **Preliminary concepts:**
 
 In regression, model predictions are continuous values. Usually, $y\in\mathbb{R}$.
 
 > Notation: $y_i$ is the actual value of the $i$th sample, $\hat{y_i}$ is the predicted value of the $i$th sample, $n$ is the number of samples.
-### Mean Squared Error (MSE) and Root Mean Squared Error (RMSE)
+### 1. Mean Squared Error (MSE) and Root Mean Squared Error (RMSE)
 MSE is the arithmetic mean of the squares of the errors.
 $$
 MSE = \frac{1}{n}\sum_{i=1}^{n}(y_i-\hat{y_i})^2
@@ -49,26 +51,28 @@ RMSE is the square root version of MSE. It is the standard deviation of the resi
 $$
 RMSE = \sqrt{MSE}
 $$
-### Mean Absolute Error (MAE)
+### 2. Mean Absolute Error (MAE)
 MAE is the average of the absolute differences between predictions and actual values.
 $$
 MAE = \frac{1}{n}\sum_{i=1}^{n}|y_i-\hat{y_i}|
 $$
-### Mean Absolute Percentage Error (MAPE)
+### 3. Mean Absolute Percentage Error (MAPE)
 MAPE is the average of the absolute percentage difference between predictions and actual values.
 $$
 MAPE = \frac{1}{n}\sum_{i=1}^{n}\frac{|y_i-\hat{y_i}|}{y_i}
 $$
 It can be sensitive to outliers.
 
-## Classification
+---
+
+## Task2: Classification
 **Preliminary concepts:**
 
 Test set are supposed to have limited and known labels, said $y_i\in\mathbb{C}$, where $\mathbb{C}$ is the set of all possible labels.
 
 > Notation: $y_i$ is the actual label of the $i$th sample, $\hat{y_i}$ is the predicted label of the $i$th sample, $n$ is the number of samples.
 
-### TP, TN, FP and FN
+### 1. TP, TN, FP and FN
 TP, TN, FP and FN classify the predictions into 4 categories for a binary classification problem.
 - TP: True Positive, the number of positive samples that are correctly predicted as positive.
 $$
@@ -94,7 +98,7 @@ The relationship between TP, TN, FP and FN is shown in the following table.
 | Pred Positive | TP | FP |
 | Pred Negative | FN | TN |
 
-### Accuracy
+### 2. Accuracy
 Accuracy is the proportion of correct predictions among all predictions.
 $$
 Accuracy = \begin{cases}
@@ -103,21 +107,24 @@ Accuracy = \begin{cases}
 \end{cases}
 $$
 
-### Precision
+#### Top-k Accuracy
+In classification, the model is supposed to predict possibilities, or scores, for each class. Top-k accuracy means that if the true label is in the top-k predicted labels, the prediction is correct.
+
+### 3. Precision
 Precision is the proportion of correct positive predictions among all positive predictions.
 $$
 Precision = \frac{TP}{TP+FP}
 $$
 In multi-class classification, precision is calculated for each class. The average of all classes' precision is the precision of the model.
 
-### Recall
+### 4. Recall
 Recall is the proportion of correct positive predictions among all actual positive samples.
 $$
 Recall = \frac{TP}{TP+FN}
 $$
 Multi-class classification takes the average.
 
-### F1 Score
+### 5. F1 Score
 F1 score is the harmonic mean of precision and recall.
 $$
 F1 = \frac{2}{\frac{1}{Precision}+\frac{1}{Recall}} = \frac{2\times Precision\times Recall}{Precision+Recall}
@@ -125,6 +132,4 @@ $$
 F1 score considers both precision and recall. It is a better metric than accuracy when the dataset is **imbalanced**.
 
 ---
-
-### Top-k Accuracy
-In classification, the model is supposed to predict possibilities, or scores, for each class. Top-k accuracy means that if the true label is in the top-k predicted labels, the prediction is correct.
+## Task3: To be continued...
