@@ -7,7 +7,7 @@ slug: post-template
 author: FlammingFrost
 math: true # set to true to enable KaTeX rendering
 
-draft: false # set to false to publish
+draft: true # set to false to publish
 date: 2020-11-16T21:21:46-05:00
 lastmod: 2023-11-16 # both date and lastmod will show in the post's footer
 
