@@ -35,7 +35,7 @@ disable_comments: false # set to true to disable comments for a specific post
 
 Paper: [OpenMatch: Open-set Consistency Regularization for Semi-supervised Learning with Outliers](https://arxiv.org/abs/2105.14148)
 
-> The Related work section is not finished yet.
+> This post is now under construction. I will update it later.
 
 ## Introduction
 

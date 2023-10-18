@@ -7,7 +7,7 @@ slug: ML-intro/evaluate
 author: FlammingFrost
 math: true # set to true to enable KaTeX rendering
 
-draft: true # set to false to publish
+draft: false # set to false to publish
 date: 2023-08-22
 lastmod: 2023-08-22 # both date and lastmod will show in the post's footer
 

@@ -167,9 +167,8 @@ Note that you can only create python version that you have installed. For exampl
 #### Enter an environment
 
 - Use `workon env_name` to enter an environment.
-- Use `source `/.virtualenvs/env_name/bin/activate` to enter an environment.
-- In vscode, you can use the GUI provided by Virtualenvwrapper to enter an environment.
-
+- Use `source /.virtualenvs/env_name/bin/activate` to enter an environment.
+- ※In vscode, you can use the GUI provided by Virtualenvwrapper to enter an environment.
   - Install Python Environments extension in vscode (intall on server).
   - Click the bottom left corner of vscode. Then you can see the GUI provided by Virtualenvwrapper. Click the environment you want to enter.
 
@@ -180,11 +179,11 @@ Note that you can only create python version that you have installed. For exampl
 
 #### Delete an environment
 
-- Use `rmvirtualenv env_name` to delete an environment.
+- Use `rm virtualenv env_name` to delete an environment.
 
 #### List all environments
 
-- Use `lsvirtualenv` to list all environments.
+- Use `ls virtualenv` to list all environments.
 
 ---
 
@@ -199,6 +198,11 @@ Note that you can only create python version that you have installed. For exampl
 3. Use `workon env_name` to enter the environment.
 
 4. Use `pip install -r requirements.txt` to install the packages in `requirements.txt`. This is usually provided by the project.
+
+### Install pytorch for specific cuda version
+By default, using `pip install torch` will install the latest version of pytorch, supporting only cpu. If you want to install pytorch for specific cuda version, you should first find the corresponding version of pytorch. 
+
+You can find the corresponding version of pytorch in [pytorch official website](https://pytorch.org/get-started/previous-versions/).
 
 ---
 
