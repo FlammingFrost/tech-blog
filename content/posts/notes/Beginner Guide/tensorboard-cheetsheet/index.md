@@ -9,7 +9,7 @@ math: false # set to true to enable KaTeX rendering
 
 draft: false # set to false to publish
 date: 2023-10-21
-lastmod: 2023-10-21 # both date and lastmod will show in the post's footer
+lastmod: 2023-10-27 # both date and lastmod will show in the post's footer
 
 feature_image:
 feature_image_alt:
@@ -95,7 +95,7 @@ writer.add_image('image', image, index)
 # By default, torch.Tensor -> (C,H,W), numpy.ndarray -> (H,W,C)
 writer.add_image('image', image, index, dataformats='HWC') 
 ```
-### Add histogram\
+### Add histogram
 
 `add_histogram` allows you to add histogram to Tensorboard. It can be used to visualize the distribution of your model.
 
@@ -116,9 +116,26 @@ writer.add_histogram('histogram', values, index)
 
 *to be continued*
 
+### Add Embedding
+
+`add_embedding` allows you to add embedding to Tensorboard. It can be used to visualize the result of your model. It provides several ways to visualize the embedding, for example, PCA, t-SNE, etc.
+
+`def add_embedding(tensor, metadata=None, label_img=None, global_step=None, tag='default')`
+
+- tensor: torch.Tensor of shape (n_samples, n_features)
+- metadata: list of labels, col1: index, col2: label
+- label_img: torch.Tensor of shape (n_samples, C, H, W), this is optional
+
+```python
+features = model(images)
+labels = targets
+writer.add_embedding(features, metadata=labels, label_img=images)
+```
+
 
 ## Reference
 
+- [Tensorboard Writer (recommended)](https://pytorch.org/docs/stable/tensorboard.html)
 - [Initialize Tensorboard - CSDN](https://blog.csdn.net/jinlong_xu/article/details/71124589)
 - [Tensorboard Tutorial - CSDN](https://blog.csdn.net/qq_41764621/article/details/126210936)
 - [Tensorboard - Github](https://github.com/tensorflow/tensorboard/blob/master/README.md)

@@ -9,7 +9,7 @@ math: false # set to true to enable KaTeX rendering
 
 draft: false # set to false to publish
 date: 2023-07-28
-lastmod: 2023-11-16 # both date and lastmod will show in the post's footer
+lastmod: 2023-09-06 # both date and lastmod will show in the post's footer
 
 feature_image:
 feature_image_alt:
