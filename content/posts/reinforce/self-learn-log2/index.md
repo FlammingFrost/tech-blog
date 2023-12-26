@@ -3,7 +3,7 @@ title: 'Reinfroce Learning Note 2: Value-based Learning'
 seo_title: 'RL Note 2: Value-based Learning'
 summary: 
 description: A brief guide to post template. # not sure about the usage
-slug: self-learn-log1
+slug: self-learn-log2
 author: FlammingFrost
 math: true # set to true to enable KaTeX rendering
 
@@ -195,7 +195,7 @@ $$
 
 The model structure can be variant.
 
-![image-20230625213723267](dql-illust.png)
+![image-20230625213723267](./fig/dql-illust.png)
 
 Rewrite the update rule of TD in backpropagate manner:
 

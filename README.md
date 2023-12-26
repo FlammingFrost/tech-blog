@@ -6,10 +6,10 @@ To edit the configration of this theme, you need to go to `/config` and edited t
 
 For hugo version $\geq$`0.115`, the `config.toml` will be replaced by `hugo.toml`. Similary, `config.toml` has the same function and `config.yaml`, except for the grammar.
 
-## Edit column on upper left
+## Edit column on upper right
 There are **2** places should be edited:
-1. In `/config/_default/menus.toml`
-```
+### 1. In `/config/_default/params.toml`
+```toml
 [[main]]
     # Top-level menu entry
     identifier = "work"
@@ -43,5 +43,9 @@ Here are some params.:
 - `identifier`: specify the parent and childern.
 - `name`: The text on the button.
 - `url`: your post folder address, pay attention to you folder structure.
-- `parent`: as it goes.
+- `parent`: as it goes. For example, when the mouse float on the "Writing" button, its children will show.
 - `weight`: Decide the rank children shown. The smallest one will be on the top.
+
+### 2. folder structure
+1. create a folder of your new column in `/content/`, for example, `/content/new_column/`.
+2. create a `_index.md` in `/content/new_column/`.

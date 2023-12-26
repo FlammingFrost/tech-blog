@@ -84,7 +84,7 @@ OpenMatch's training loss consists of 3 parts:
 
 The key of supervised hard-negative loss is that each sub-classifier outputs a distance from the corresponding class. The loss is defined as follows:
 
-![](eq1.png)
+![](./fig/eq1.png)
 
 This technique is proposed by Saito *et al.* in [Open-Set Domain Adaptation by Backpropagation](https://arxiv.org/abs/1804.10427). The intuition is that the distance from the correct class should be smaller than the distance from other classes. The loss is minimized when the distance from the correct class is smaller than the distance from other classes.
 
@@ -92,7 +92,7 @@ This technique is proposed by Saito *et al.* in [Open-Set Domain Adaptation by B
 
 The open-set entropy loss is defined as follows:
 
-![equation2](eq2.png)
+![equation2](./fig/eq2.png)
 
 The intuition is that the entropy of the output of the sub-classifier (outlier detector) should be high. The sub-classifier should separate inliers and outliers well.
 
@@ -100,7 +100,7 @@ The intuition is that the entropy of the output of the sub-classifier (outlier d
 
 This is the main novelty of OpenMatch. The loss is defined as follows:
 
-![](eq3.png)
+![](./fig/eq3.png)
 
 The intuition is that the output of the sub-classifier should be consistent with the augmentation. It ensures the smoothness w.r.t. augmentation $\mathcal{T}$. Different from previous soft consistency regulazation, OpenMatch uses the output of the outliers detector to compute the loss. (*i.e.* In SimCLR, the output of the encoder is used to compute the loss.)
 
@@ -114,7 +114,7 @@ The above 3 losses are all used to train the outlier detector. The closed-set cl
 
 OpenMatch Algorithm is shown in the following figure.
 
-![](alg1.png)
+![](./fig/alg1.png)
 
 Compare to FixMatch, OpenMatch roughly has two stages:
 
@@ -138,7 +138,7 @@ OpenMatch is compared with 3 models: MTC, FixMatch (on open-set), and classifier
 
 In both classification task and anomaly detection task, OpenMatch outperforms other methods. In the anomaly detection task, OpenMatch achieves 0.5% higher AUROC than MTC. In the classification task, OpenMatch achieves 0.5% higher accuracy than FixMatch.
 
-![](tab1.png)
+![](./fig/tab1.png)
 
 OpenMatch significantly improves performance of FixMatch, which can have a poor performance when the unlabeled data contains outliers. However, compared to closed-set FixMatch, which has an accuracy of 11.39%, 5.07% and **4.31%** with 4, 25 and **400** labeled data in each class. Also, FixMatch achieves an accuracy of about 23% on CIFAR-100, 100 labels per class.
 
@@ -152,7 +152,7 @@ As reported in paper, the error rate of classification rises as the ratio of inl
 
 The ablation study of SOCR is shown in the following table. The results show that SOCR is important for the performance of OpenMatch.
 
-![](tab2.png)
+![](./fig/tab2.png)
 
 Again, the error rate of classification rises as the ratio of inliers increases. This might related to imbalance. The ratio 55/45 is more balanced than 80/20, this may account for the better performance.
 
@@ -164,7 +164,7 @@ Above procedure not only train a classifier and a outlier detector, but also lea
 
 OpenMatch learns a representation that separates inliers and outliers, considering outliers as another class. The t-SNE visualization of the representation is shown in the following figure. The outliers are well separated from inliers.
 
-![](fig1.png)
+![](./fig/fig1.png)
 
 
 ## temporary notes

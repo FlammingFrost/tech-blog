@@ -57,12 +57,18 @@
     weight = 6
 
 [[main]]
-    identifier = "notes"
-    name = "Other Notes"
-    # url = "/subsection3/"
-    url = "/posts/notes/" # Remove url param from subsection3/_index.md frontmatter to use full permalink
+    identifier = "fpv"
+    name = "FPV"
+    url = "/posts/fpv/" # Remove url param from subsection3/_index.md frontmatter to use full permalink
     parent = "writing"
     weight = 7
+
+[[main]]
+    identifier = "notes"
+    name = "Other Notes"
+    url = "/posts/notes/" # Remove url param from subsection3/_index.md frontmatter to use full permalink
+    parent = "writing"
+    weight = 8
 
 [[main]]
     # Top-level menu entry

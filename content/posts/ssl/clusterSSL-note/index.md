@@ -47,19 +47,19 @@ paper: [Semi-supervised learning made simple with self-supervised clustering](ht
 
 The idea of this paper is simple. It uses a supervised loss to align the clusters with the labeled data. Simply append it to the loss function of the cluster-based SSL method.
 
-![Architecture](arch.png)
+![Architecture](./fig/arch.png)
 
 ## Results
 
 ### Comparision with Consistency SSL
 
-![Comparision with Consistency SSL Model](image.png)
+![Comparision with Consistency SSL Model](./fig/image.png)
 
 Compared with consistency SSl, which focus on the consistency regularizaiton in SSL, this method is outperformed the strong baseline.
 
 ### Compare with SOTA model on ImageNet
 
-![Comparision on ImageNet](image-1.png)
+![Comparision on ImageNet](./fig/image-1.png)
 
 Here the method is compared with three types of SOTA models on ImageNet: Small-batch semi-supervised learning like [FixMatch](https://arxiv.org/abs/2001.07685), Large-batch semi-supervised learning methods and self-supervised learning methods with fine-tuning. 
 
@@ -67,7 +67,7 @@ The method outperforms most of the methods in the semi-supervised learning metho
 
 ### Compare with backbones method with labeled data
 
-![Table4 5](image-2.png)
+![Table4 5](./fig/image-2.png)
 
 Here one of the multi-task model, Suave is compared with SwAV and its semi-supervised version, SwAV+CT. "Multi-task" means the model is trained with losses from both labeled data and unlabeled data. 
 
