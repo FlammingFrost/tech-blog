@@ -1,7 +1,7 @@
 ---
 title: Applying LLMs in Specific Domains
 seo_title: NLPProj
-summary: Summary shown on the post list.
+summary: Some thoughts about the challenge and the impact of LLMs in.
 description: A brief guide to post template. # not sure about the usage
 slug: NLPProj
 author: FlammingFrost
