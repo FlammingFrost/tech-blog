@@ -7,7 +7,7 @@ slug: NLPProj
 author: FlammingFrost
 math: true # set to true to enable KaTeX rendering
 
-draft: false # set to false to publish
+draft: true # set to false to publish
 date: 2023-12-26
 lastmod: 2023-12-26 # both date and lastmod will show in the post's footer
 

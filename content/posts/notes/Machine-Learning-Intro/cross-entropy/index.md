@@ -15,12 +15,12 @@ feature_image:
 feature_image_alt:
 
 categories:
-  - ML
+  - Machine Learning
   - Tutorial
 
 tags:
-  - Machine Learning
-  - Basic Concepts
+  - ML
+  - Basic
 series: 
   - Machine Learning Intro
 

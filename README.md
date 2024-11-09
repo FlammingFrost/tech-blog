@@ -8,7 +8,7 @@ For hugo version $\geq$`0.115`, the `config.toml` will be replaced by `hugo.toml
 
 ## Edit column on upper right
 There are **2** places should be edited:
-### 1. In `/config/_default/params.toml`
+### 1. In `/config/_default/menus.toml`
 ```toml
 [[main]]
     # Top-level menu entry

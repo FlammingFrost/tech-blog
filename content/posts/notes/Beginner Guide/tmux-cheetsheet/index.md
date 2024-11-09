@@ -65,8 +65,4 @@ sudo apt install tmux
 
 ## Reference
 
-- [Tensorboard Writer (recommended)](https://pytorch.org/docs/stable/tensorboard.html)
-- [Initialize Tensorboard - CSDN](https://blog.csdn.net/jinlong_xu/article/details/71124589)
-- [Tensorboard Tutorial - CSDN](https://blog.csdn.net/qq_41764621/article/details/126210936)
-- [Tensorboard - Github](https://github.com/tensorflow/tensorboard/blob/master/README.md)
-- [Tensorboard Tutorial - Tensorflow](https://www.tensorflow.org/tensorboard/get_started)
+- [Advanced Tmux Tutorial](https://www.51cto.com/article/664989.html)
