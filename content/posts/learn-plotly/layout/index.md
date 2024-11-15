@@ -35,6 +35,7 @@ disable_comments: false # set to true to disable comments for a specific post
 - [Code Example](#code-example)
   - [Canva Size (Example)](#canva-size-example)
   - [Plot in specific area (Example)](#plot-in-specific-area-example)
+- [View My Interactive Chart](#view-my-interactive-chart)
 
 ## Overview
 This post talks about the layout setting for Plotly. Specifically, the layout setting can be evoked by
@@ -143,3 +144,10 @@ layout = go.Layout(
 )
 ```
 
+## View My Interactive Chart
+
+<iframe src="plot/testplot.html" width="800" height="600" style="border:none;"></iframe>
+
+ddsfs
+
+[Click here to view the chart](plots/testplot.html)
