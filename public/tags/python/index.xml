@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on FlammingFrost&#39;s Learning Log</title>
+    <link>http://localhost:1313/tech-blog/tags/python/</link>
+    <description>Recent content in Python on FlammingFrost&#39;s Learning Log</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Oct 2023 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tech-blog/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cheetsheet for Python os module</title>
+      <link>http://localhost:1313/tech-blog/notes/bg/pytorch-dataset/</link>
+      <pubDate>Wed, 06 Mar 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/bg/pytorch-dataset/</guid>
+      <description>Some useful commands for Python os module, especially IO operations and file system operations.</description>
+    </item>
+    <item>
+      <title>Debugging Python with pdb</title>
+      <link>http://localhost:1313/tech-blog/notes/bg/pdb/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/bg/pdb/</guid>
+      <description>Use pdb to debug python code. Cheat sheet.</description>
+    </item>
+  </channel>
+</rss>

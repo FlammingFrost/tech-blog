@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personal on FlammingFrost&#39;s Learning Log</title>
+    <link>http://localhost:1313/tech-blog/project-types/personal/</link>
+    <description>Recent content in Personal on FlammingFrost&#39;s Learning Log</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Feb 2020 03:52:30 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tech-blog/project-types/personal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Portfolio Project 2</title>
+      <link>http://localhost:1313/tech-blog/projects/portfolio-project-2/</link>
+      <pubDate>Thu, 20 Feb 2020 03:52:30 -0500</pubDate>
+      <guid>http://localhost:1313/tech-blog/projects/portfolio-project-2/</guid>
+      <description>Portfolio Project 2 is my second portfolio project.</description>
+    </item>
+    <item>
+      <title>Portfolio Project 1</title>
+      <link>http://localhost:1313/tech-blog/projects/portfolio-project-1/</link>
+      <pubDate>Wed, 20 Feb 2019 03:52:30 -0500</pubDate>
+      <guid>http://localhost:1313/tech-blog/projects/portfolio-project-1/</guid>
+      <description>There hasn&amp;rsquo;t been any project added yet.</description>
+    </item>
+  </channel>
+</rss>

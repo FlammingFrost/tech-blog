@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on FlammingFrost&#39;s Learning Log</title>
+    <link>http://localhost:1313/tech-blog/projects/</link>
+    <description>Recent content in Projects on FlammingFrost&#39;s Learning Log</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Feb 2023 03:52:30 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tech-blog/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Portfolio Project 3</title>
+      <link>http://localhost:1313/tech-blog/projects/portfolio-project-3/</link>
+      <pubDate>Mon, 20 Feb 2023 03:52:30 -0500</pubDate>
+      <guid>http://localhost:1313/tech-blog/projects/portfolio-project-3/</guid>
+      <description>Portfolio Project 3 is my third portfolio project.</description>
+    </item>
+    <item>
+      <title>Portfolio Project 4</title>
+      <link>http://localhost:1313/tech-blog/projects/portfolio-project-4/</link>
+      <pubDate>Sun, 20 Feb 2022 03:52:30 -0500</pubDate>
+      <guid>http://localhost:1313/tech-blog/projects/portfolio-project-4/</guid>
+      <description>Portfolio Project 4 is my fourth portfolio project.</description>
+    </item>
+    <item>
+      <title>Portfolio Project 5</title>
+      <link>http://localhost:1313/tech-blog/projects/portfolio-project-5/</link>
+      <pubDate>Sat, 20 Feb 2021 03:52:30 -0500</pubDate>
+      <guid>http://localhost:1313/tech-blog/projects/portfolio-project-5/</guid>
+      <description>Portfolio Project 5 is my fifth portfolio project.</description>
+    </item>
+    <item>
+      <title>Portfolio Project 2</title>
+      <link>http://localhost:1313/tech-blog/projects/portfolio-project-2/</link>
+      <pubDate>Thu, 20 Feb 2020 03:52:30 -0500</pubDate>
+      <guid>http://localhost:1313/tech-blog/projects/portfolio-project-2/</guid>
+      <description>Portfolio Project 2 is my second portfolio project.</description>
+    </item>
+    <item>
+      <title>Portfolio Project 1</title>
+      <link>http://localhost:1313/tech-blog/projects/portfolio-project-1/</link>
+      <pubDate>Wed, 20 Feb 2019 03:52:30 -0500</pubDate>
+      <guid>http://localhost:1313/tech-blog/projects/portfolio-project-1/</guid>
+      <description>There hasn&amp;rsquo;t been any project added yet.</description>
+    </item>
+  </channel>
+</rss>

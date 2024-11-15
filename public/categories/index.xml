@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on FlammingFrost&#39;s Learning Log</title>
+    <link>http://localhost:1313/tech-blog/categories/</link>
+    <description>Recent content in Categories on FlammingFrost&#39;s Learning Log</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Nov 2024 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tech-blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plotly</title>
+      <link>http://localhost:1313/tech-blog/categories/plotly/</link>
+      <pubDate>Thu, 14 Nov 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/categories/plotly/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Network Science</title>
+      <link>http://localhost:1313/tech-blog/categories/network-science/</link>
+      <pubDate>Fri, 12 Apr 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/categories/network-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>http://localhost:1313/tech-blog/categories/tutorial/</link>
+      <pubDate>Fri, 12 Apr 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/categories/tutorial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cheet Sheet</title>
+      <link>http://localhost:1313/tech-blog/categories/cheet-sheet/</link>
+      <pubDate>Wed, 06 Mar 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/categories/cheet-sheet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FPV</title>
+      <link>http://localhost:1313/tech-blog/categories/fpv/</link>
+      <pubDate>Wed, 06 Mar 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/categories/fpv/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine Learning</title>
+      <link>http://localhost:1313/tech-blog/categories/machine-learning/</link>
+      <pubDate>Tue, 22 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/categories/machine-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Paper Note</title>
+      <link>http://localhost:1313/tech-blog/categories/paper-note/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/categories/paper-note/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Semi-Supervised Learning</title>
+      <link>http://localhost:1313/tech-blog/categories/semi-supervised-learning/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/categories/semi-supervised-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SSL</title>
+      <link>http://localhost:1313/tech-blog/categories/ssl/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/categories/ssl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Self-Supervised Learning</title>
+      <link>http://localhost:1313/tech-blog/categories/self-supervised-learning/</link>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/categories/self-supervised-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OSSL</title>
+      <link>http://localhost:1313/tech-blog/categories/ossl/</link>
+      <pubDate>Thu, 03 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/categories/ossl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reinforce Learning</title>
+      <link>http://localhost:1313/tech-blog/categories/reinforce-learning/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/categories/reinforce-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Math</title>
+      <link>http://localhost:1313/tech-blog/categories/math/</link>
+      <pubDate>Mon, 16 Nov 2020 21:21:46 -0500</pubDate>
+      <guid>http://localhost:1313/tech-blog/categories/math/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Templates</title>
+      <link>http://localhost:1313/tech-blog/categories/templates/</link>
+      <pubDate>Mon, 16 Nov 2020 21:21:46 -0500</pubDate>
+      <guid>http://localhost:1313/tech-blog/categories/templates/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reinforce Learning on FlammingFrost&#39;s Learning Log</title>
+    <link>http://localhost:1313/tech-blog/categories/reinforce-learning/</link>
+    <description>Recent content in Reinforce Learning on FlammingFrost&#39;s Learning Log</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Jul 2023 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tech-blog/categories/reinforce-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reinfroce Learning Note 1: Basic Notion</title>
+      <link>http://localhost:1313/tech-blog/reinforce/self-learn-log1/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/reinforce/self-learn-log1/</guid>
+      <description>Basic notion in reinforce learning. Agent, state, action, policy, reward, state transition and value function.</description>
+    </item>
+    <item>
+      <title>Reinfroce Learning Note 2: Value-based Learning</title>
+      <link>http://localhost:1313/tech-blog/reinforce/self-learn-log2/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/reinforce/self-learn-log2/</guid>
+      <description>&lt;h1 id=&#34;value-based-learning&#34;&gt;Value-based Learning&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;credit:&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Bellman_equation&#34;&gt;Bellman equation - Wikipedia&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/57836142&#34;&gt;Temporal Difference Learning - 知乎 (zhihu.com)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/81806149&#34;&gt;蒙特卡洛梯度估计方法（MCGE）简述 - 知乎 (zhihu.com)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/73083240&#34;&gt;强化学习 - 时间差分学习(Temporal-Difference Learning) - 知乎 (zhihu.com)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;outline&#34;&gt;Outline&lt;/h2&gt;&#xA;&lt;h3 id=&#34;goal-of-rl&#34;&gt;Goal of RL&lt;/h3&gt;&#xA;&lt;p&gt;Win the game. It can be described by maximizing the expected return.&lt;/p&gt;&#xA;&lt;h3 id=&#34;challenge&#34;&gt;Challenge&lt;/h3&gt;&#xA;&lt;p&gt;Q1. How to choose an action with better return as $U_t$ is random variable?&lt;/p&gt;&#xA;&lt;p&gt;A1. Expectation. The action-value function use expectation to remove the influence of future randomness.&lt;/p&gt;&#xA;&lt;p&gt;Q2. How can I choose currently best action if we had known $Q^*$, the optimal value function?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

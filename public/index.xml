@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learn Machine Learning with FlammingFrost 🤗 on FlammingFrost&#39;s Learning Log</title>
+    <link>http://localhost:1313/tech-blog/</link>
+    <description>Recent content in Learn Machine Learning with FlammingFrost 🤗 on FlammingFrost&#39;s Learning Log</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Nov 2024 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tech-blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Layout Setting for Plotly</title>
+      <link>http://localhost:1313/tech-blog/learn-plotly/plotly/layout/</link>
+      <pubDate>Thu, 14 Nov 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/learn-plotly/plotly/layout/</guid>
+      <description>Canva size, axis, inset, multi-plot, and more</description>
+    </item>
+    <item>
+      <title>Network Science Notes 1: Random Network</title>
+      <link>http://localhost:1313/tech-blog/netsci/netsci/note-1-graph/</link>
+      <pubDate>Fri, 12 Apr 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/netsci/netsci/note-1-graph/</guid>
+      <description>The analysis of network science is basically based on graph theory. We use some quantitative measures to describe the structure of a network and analyze its properties.</description>
+    </item>
+    <item>
+      <title>Network Science Notes 2: Random Network</title>
+      <link>http://localhost:1313/tech-blog/netsci/netsci/note-2-randnet/</link>
+      <pubDate>Fri, 12 Apr 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/netsci/netsci/note-2-randnet/</guid>
+      <description>Random networks are the simplest type of network. By studying random networks, I get to know what aspects of a network are important and how to measure them.</description>
+    </item>
+    <item>
+      <title>Network Science Notes 3: Scale-Free Network</title>
+      <link>http://localhost:1313/tech-blog/netsci/netsci/note-3-scalefree/</link>
+      <pubDate>Fri, 12 Apr 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/netsci/netsci/note-3-scalefree/</guid>
+      <description>Deviated from the random network, the scale-free network has a power-law degree distribution and seems to be more common in real-world networks. What&amp;rsquo;s the intrinsic mechanism behind it?</description>
+    </item>
+    <item>
+      <title>Network Science Notes 4: Growing Network</title>
+      <link>http://localhost:1313/tech-blog/netsci/netsci/note-4-grownet/</link>
+      <pubDate>Fri, 12 Apr 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/netsci/netsci/note-4-grownet/</guid>
+      <description>In this note we generate a network by adding nodes and links one by one (The Barabási-Albert Model), this mechanism will help to explain hubs and degree distribution in real-world networks.</description>
+    </item>
+    <item>
+      <title>Basic Concepts in Network Science</title>
+      <link>http://localhost:1313/tech-blog/netsci/netsci/basic-concepts/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/netsci/netsci/basic-concepts/</guid>
+      <description>Start from graph theory, we use some quantitative measures to describe the structure of a network.</description>
+    </item>
+    <item>
+      <title>Cheetsheet for Python os module</title>
+      <link>http://localhost:1313/tech-blog/notes/bg/pytorch-dataset/</link>
+      <pubDate>Wed, 06 Mar 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/bg/pytorch-dataset/</guid>
+      <description>Some useful commands for Python os module, especially IO operations and file system operations.</description>
+    </item>
+    <item>
+      <title>Customize your PyTorch Dataset</title>
+      <link>http://localhost:1313/tech-blog/notes/bg/pytorch-dataset/</link>
+      <pubDate>Wed, 06 Mar 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/bg/pytorch-dataset/</guid>
+      <description>A guide to customize your PyTorch Dataset. This is the first step for your PyTorch project.</description>
+    </item>
+    <item>
+      <title>Some Notes for Betaflight</title>
+      <link>http://localhost:1313/tech-blog/fpv/fpv/bf/</link>
+      <pubDate>Wed, 06 Mar 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/fpv/fpv/bf/</guid>
+      <description>Recording some difficulties I encountered and the solutions I found when using Betaflight. PID tuning, receiver setup, VTX setup, etc.</description>
+    </item>
+    <item>
+      <title>Applying LLMs in Specific Domains</title>
+      <link>http://localhost:1313/tech-blog/notes/nlpproj/</link>
+      <pubDate>Tue, 26 Dec 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/nlpproj/</guid>
+      <description>Some thoughts about the challenge and the impact of LLMs in.</description>
+    </item>
+    <item>
+      <title>Debugging Python with pdb</title>
+      <link>http://localhost:1313/tech-blog/notes/bg/pdb/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/bg/pdb/</guid>
+      <description>Use pdb to debug python code. Cheat sheet.</description>
+    </item>
+    <item>
+      <title>Tensorboard Cheet Sheet (SummaryWriter)</title>
+      <link>http://localhost:1313/tech-blog/notes/bg/tensorboard/</link>
+      <pubDate>Sat, 21 Oct 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/bg/tensorboard/</guid>
+      <description>List some commonly used commands for tensorboard.</description>
+    </item>
+    <item>
+      <title>Using tmux to manage your terminal</title>
+      <link>http://localhost:1313/tech-blog/notes/bg/tmux/</link>
+      <pubDate>Sat, 21 Oct 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/bg/tmux/</guid>
+      <description>Create, kill, and manage tmux sessions</description>
+    </item>
+    <item>
+      <title>Entropy, KL Divergence and Cross Entropy</title>
+      <link>http://localhost:1313/tech-blog/notes/ml-intro/cross-entropy/</link>
+      <pubDate>Tue, 22 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/ml-intro/cross-entropy/</guid>
+      <description>Cross entropy is a loss function used in classification problems. This post will introduce the definition and the intuition behind cross entropy.</description>
+    </item>
+    <item>
+      <title>How to Evaluate the Performance of ML Models</title>
+      <link>http://localhost:1313/tech-blog/notes/ml-intro/evaluate/</link>
+      <pubDate>Tue, 22 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/ml-intro/evaluate/</guid>
+      <description>Maching learning basically have 2 tasks: regression and classification. This post will introduce how to evaluate the performance of ML models in these 2 tasks.</description>
+    </item>
+    <item>
+      <title>Loss Functions</title>
+      <link>http://localhost:1313/tech-blog/notes/ml-intro/loss/</link>
+      <pubDate>Tue, 22 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/ml-intro/loss/</guid>
+      <description>Loss Functions define what a model learns. Different loss casts different focus on the model&amp;rsquo;s learning process.</description>
+    </item>
+    <item>
+      <title>Cluster-based SSL: Aligning Clusters with Labeded Data</title>
+      <link>http://localhost:1313/tech-blog/ssl/clst-ssl-note/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/ssl/clst-ssl-note/</guid>
+      <description>Cluster-based self-supervised method often represents the data in clusters that inconsistent with the labeled data. This paper directly aligns the clusters with the labeled data, using SOTA framework in Supervised Learning.</description>
+    </item>
+    <item>
+      <title>SwAV: Unsupervised Learning Transformed to Transportation Problem using Multi-crop Technique</title>
+      <link>http://localhost:1313/tech-blog/ssl/swav-note/</link>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/ssl/swav-note/</guid>
+      <description>In paper SeLa (Self-labeling), the cluster-based self-supervised method is transformed to a transportation problem, and optimized using Sinkhorn-Knopp algorithm. This paper refined the methods by using contrastive learning between views and applied multi-crop technique.</description>
+    </item>
+    <item>
+      <title>OpenMatch: Learn a Outlier Dectector to Enhance FixMatch</title>
+      <link>http://localhost:1313/tech-blog/ssl/openmatchnote/</link>
+      <pubDate>Thu, 03 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/ssl/openmatchnote/</guid>
+      <description>OpenMatch introduces a detector to filter out outliers from unlabeled data, and then learn like FixMatch. Its representation is also adapted to the task.</description>
+    </item>
+    <item>
+      <title>Create A Site by Hugo</title>
+      <link>http://localhost:1313/tech-blog/notes/bg/create-a-site/</link>
+      <pubDate>Sat, 29 Jul 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/bg/create-a-site/</guid>
+      <description>Setting up a Hugo site. Some details and tips.</description>
+    </item>
+    <item>
+      <title>Coding Python in Linux Server</title>
+      <link>http://localhost:1313/tech-blog/notes/bg/config-py/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/bg/config-py/</guid>
+      <description>Configurate Python Env. in Linux. Connect to server with VSCode.</description>
+    </item>
+    <item>
+      <title>Git Command Guide</title>
+      <link>http://localhost:1313/tech-blog/notes/bg/gitnote/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/bg/gitnote/</guid>
+      <description>Some common and useful git commands.</description>
+    </item>
+    <item>
+      <title>Reinfroce Learning Note 1: Basic Notion</title>
+      <link>http://localhost:1313/tech-blog/reinforce/self-learn-log1/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/reinforce/self-learn-log1/</guid>
+      <description>Basic notion in reinforce learning. Agent, state, action, policy, reward, state transition and value function.</description>
+    </item>
+    <item>
+      <title>Reinfroce Learning Note 2: Value-based Learning</title>
+      <link>http://localhost:1313/tech-blog/reinforce/self-learn-log2/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/reinforce/self-learn-log2/</guid>
+      <description>&lt;h1 id=&#34;value-based-learning&#34;&gt;Value-based Learning&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;credit:&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Bellman_equation&#34;&gt;Bellman equation - Wikipedia&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/57836142&#34;&gt;Temporal Difference Learning - 知乎 (zhihu.com)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/81806149&#34;&gt;蒙特卡洛梯度估计方法（MCGE）简述 - 知乎 (zhihu.com)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/73083240&#34;&gt;强化学习 - 时间差分学习(Temporal-Difference Learning) - 知乎 (zhihu.com)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;outline&#34;&gt;Outline&lt;/h2&gt;&#xA;&lt;h3 id=&#34;goal-of-rl&#34;&gt;Goal of RL&lt;/h3&gt;&#xA;&lt;p&gt;Win the game. It can be described by maximizing the expected return.&lt;/p&gt;&#xA;&lt;h3 id=&#34;challenge&#34;&gt;Challenge&lt;/h3&gt;&#xA;&lt;p&gt;Q1. How to choose an action with better return as $U_t$ is random variable?&lt;/p&gt;&#xA;&lt;p&gt;A1. Expectation. The action-value function use expectation to remove the influence of future randomness.&lt;/p&gt;&#xA;&lt;p&gt;Q2. How can I choose currently best action if we had known $Q^*$, the optimal value function?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Portfolio Project 3</title>
+      <link>http://localhost:1313/tech-blog/projects/portfolio-project-3/</link>
+      <pubDate>Mon, 20 Feb 2023 03:52:30 -0500</pubDate>
+      <guid>http://localhost:1313/tech-blog/projects/portfolio-project-3/</guid>
+      <description>Portfolio Project 3 is my third portfolio project.</description>
+    </item>
+    <item>
+      <title>Portfolio Project 4</title>
+      <link>http://localhost:1313/tech-blog/projects/portfolio-project-4/</link>
+      <pubDate>Sun, 20 Feb 2022 03:52:30 -0500</pubDate>
+      <guid>http://localhost:1313/tech-blog/projects/portfolio-project-4/</guid>
+      <description>Portfolio Project 4 is my fourth portfolio project.</description>
+    </item>
+    <item>
+      <title>Portfolio Project 5</title>
+      <link>http://localhost:1313/tech-blog/projects/portfolio-project-5/</link>
+      <pubDate>Sat, 20 Feb 2021 03:52:30 -0500</pubDate>
+      <guid>http://localhost:1313/tech-blog/projects/portfolio-project-5/</guid>
+      <description>Portfolio Project 5 is my fifth portfolio project.</description>
+    </item>
+    <item>
+      <title>Post Template</title>
+      <link>http://localhost:1313/tech-blog/notes/post-template/</link>
+      <pubDate>Mon, 16 Nov 2020 21:21:46 -0500</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/post-template/</guid>
+      <description>Summary shown on the post list.</description>
+    </item>
+    <item>
+      <title>Portfolio Project 2</title>
+      <link>http://localhost:1313/tech-blog/projects/portfolio-project-2/</link>
+      <pubDate>Thu, 20 Feb 2020 03:52:30 -0500</pubDate>
+      <guid>http://localhost:1313/tech-blog/projects/portfolio-project-2/</guid>
+      <description>Portfolio Project 2 is my second portfolio project.</description>
+    </item>
+    <item>
+      <title>Portfolio Project 1</title>
+      <link>http://localhost:1313/tech-blog/projects/portfolio-project-1/</link>
+      <pubDate>Wed, 20 Feb 2019 03:52:30 -0500</pubDate>
+      <guid>http://localhost:1313/tech-blog/projects/portfolio-project-1/</guid>
+      <description>There hasn&amp;rsquo;t been any project added yet.</description>
+    </item>
+    <item>
+      <title>Hasn&#39;t available yet</title>
+      <link>http://localhost:1313/tech-blog/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tech-blog/contact/</guid>
+      <description>&lt;p&gt;This blog is currently read-only.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hi, my name is FlammingFrost.</title>
+      <link>http://localhost:1313/tech-blog/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tech-blog/about/</guid>
+      <description>&lt;p&gt;You can customize the about page heading and disable social links if desired. The rest of the content can be added with markdown. Please see &lt;a href=&#34;https://github.com/wjh18/hugo-liftoff&#34;&gt;Github&lt;/a&gt; for a full list of features and documentation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;who-am-i&#34;&gt;Who am I?&lt;/h2&gt;&#xA;&lt;p&gt;I am FlammingFrost, a student in the University of Science and Technology of China. I am interested in Machine Learning and Computer Vision. I am currently working on Self-supervised Learning and Semi-supervised Learning.&lt;/p&gt;&#xA;&lt;h2 id=&#34;my-experience&#34;&gt;My Experience&lt;/h2&gt;&#xA;&lt;p&gt;I could be a numb student only take in knowledge, but I want to be a person who can create knowledge. So I am trying to do some research in the field of Machine Learning and Computer Vision.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

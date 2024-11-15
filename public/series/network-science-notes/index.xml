@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Network Science Notes on FlammingFrost&#39;s Learning Log</title>
+    <link>http://localhost:1313/tech-blog/series/network-science-notes/</link>
+    <description>Recent content in Network Science Notes on FlammingFrost&#39;s Learning Log</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Apr 2024 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tech-blog/series/network-science-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Network Science Notes 1: Random Network</title>
+      <link>http://localhost:1313/tech-blog/netsci/netsci/note-1-graph/</link>
+      <pubDate>Fri, 12 Apr 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/netsci/netsci/note-1-graph/</guid>
+      <description>The analysis of network science is basically based on graph theory. We use some quantitative measures to describe the structure of a network and analyze its properties.</description>
+    </item>
+    <item>
+      <title>Network Science Notes 2: Random Network</title>
+      <link>http://localhost:1313/tech-blog/netsci/netsci/note-2-randnet/</link>
+      <pubDate>Fri, 12 Apr 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/netsci/netsci/note-2-randnet/</guid>
+      <description>Random networks are the simplest type of network. By studying random networks, I get to know what aspects of a network are important and how to measure them.</description>
+    </item>
+    <item>
+      <title>Network Science Notes 3: Scale-Free Network</title>
+      <link>http://localhost:1313/tech-blog/netsci/netsci/note-3-scalefree/</link>
+      <pubDate>Fri, 12 Apr 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/netsci/netsci/note-3-scalefree/</guid>
+      <description>Deviated from the random network, the scale-free network has a power-law degree distribution and seems to be more common in real-world networks. What&amp;rsquo;s the intrinsic mechanism behind it?</description>
+    </item>
+    <item>
+      <title>Network Science Notes 4: Growing Network</title>
+      <link>http://localhost:1313/tech-blog/netsci/netsci/note-4-grownet/</link>
+      <pubDate>Fri, 12 Apr 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/netsci/netsci/note-4-grownet/</guid>
+      <description>In this note we generate a network by adding nodes and links one by one (The Barabási-Albert Model), this mechanism will help to explain hubs and degree distribution in real-world networks.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Network Science Course Notes on FlammingFrost&#39;s Learning Log</title>
+    <link>http://localhost:1313/tech-blog/series/network-science-course-notes/</link>
+    <description>Recent content in Network Science Course Notes on FlammingFrost&#39;s Learning Log</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Mar 2024 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tech-blog/series/network-science-course-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic Concepts in Network Science</title>
+      <link>http://localhost:1313/tech-blog/netsci/netsci/basic-concepts/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/netsci/netsci/basic-concepts/</guid>
+      <description>Start from graph theory, we use some quantitative measures to describe the structure of a network.</description>
+    </item>
+  </channel>
+</rss>

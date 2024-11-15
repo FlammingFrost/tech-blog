@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OSSL on FlammingFrost&#39;s Learning Log</title>
+    <link>http://localhost:1313/tech-blog/categories/ossl/</link>
+    <description>Recent content in OSSL on FlammingFrost&#39;s Learning Log</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Nov 2023 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tech-blog/categories/ossl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenMatch: Learn a Outlier Dectector to Enhance FixMatch</title>
+      <link>http://localhost:1313/tech-blog/ssl/openmatchnote/</link>
+      <pubDate>Thu, 03 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/ssl/openmatchnote/</guid>
+      <description>OpenMatch introduces a detector to filter out outliers from unlabeled data, and then learn like FixMatch. Its representation is also adapted to the task.</description>
+    </item>
+  </channel>
+</rss>

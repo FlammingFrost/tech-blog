@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Self-Supervised Learning on FlammingFrost&#39;s Learning Log</title>
+    <link>http://localhost:1313/tech-blog/categories/self-supervised-learning/</link>
+    <description>Recent content in Self-Supervised Learning on FlammingFrost&#39;s Learning Log</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Aug 2023 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tech-blog/categories/self-supervised-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SwAV: Unsupervised Learning Transformed to Transportation Problem using Multi-crop Technique</title>
+      <link>http://localhost:1313/tech-blog/ssl/swav-note/</link>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/ssl/swav-note/</guid>
+      <description>In paper SeLa (Self-labeling), the cluster-based self-supervised method is transformed to a transportation problem, and optimized using Sinkhorn-Knopp algorithm. This paper refined the methods by using contrastive learning between views and applied multi-crop technique.</description>
+    </item>
+  </channel>
+</rss>

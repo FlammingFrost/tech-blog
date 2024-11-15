@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on FlammingFrost&#39;s Learning Log</title>
+    <link>http://localhost:1313/tech-blog/tags/hugo/</link>
+    <description>Recent content in Hugo on FlammingFrost&#39;s Learning Log</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Jul 2023 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tech-blog/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create A Site by Hugo</title>
+      <link>http://localhost:1313/tech-blog/notes/bg/create-a-site/</link>
+      <pubDate>Sat, 29 Jul 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/bg/create-a-site/</guid>
+      <description>Setting up a Hugo site. Some details and tips.</description>
+    </item>
+  </channel>
+</rss>

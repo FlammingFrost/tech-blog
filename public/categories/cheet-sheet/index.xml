@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cheet Sheet on FlammingFrost&#39;s Learning Log</title>
+    <link>http://localhost:1313/tech-blog/categories/cheet-sheet/</link>
+    <description>Recent content in Cheet Sheet on FlammingFrost&#39;s Learning Log</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Oct 2023 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tech-blog/categories/cheet-sheet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cheetsheet for Python os module</title>
+      <link>http://localhost:1313/tech-blog/notes/bg/pytorch-dataset/</link>
+      <pubDate>Wed, 06 Mar 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/bg/pytorch-dataset/</guid>
+      <description>Some useful commands for Python os module, especially IO operations and file system operations.</description>
+    </item>
+    <item>
+      <title>Customize your PyTorch Dataset</title>
+      <link>http://localhost:1313/tech-blog/notes/bg/pytorch-dataset/</link>
+      <pubDate>Wed, 06 Mar 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/bg/pytorch-dataset/</guid>
+      <description>A guide to customize your PyTorch Dataset. This is the first step for your PyTorch project.</description>
+    </item>
+    <item>
+      <title>Debugging Python with pdb</title>
+      <link>http://localhost:1313/tech-blog/notes/bg/pdb/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/bg/pdb/</guid>
+      <description>Use pdb to debug python code. Cheat sheet.</description>
+    </item>
+    <item>
+      <title>Tensorboard Cheet Sheet (SummaryWriter)</title>
+      <link>http://localhost:1313/tech-blog/notes/bg/tensorboard/</link>
+      <pubDate>Sat, 21 Oct 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/bg/tensorboard/</guid>
+      <description>List some commonly used commands for tensorboard.</description>
+    </item>
+    <item>
+      <title>Using tmux to manage your terminal</title>
+      <link>http://localhost:1313/tech-blog/notes/bg/tmux/</link>
+      <pubDate>Sat, 21 Oct 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/bg/tmux/</guid>
+      <description>Create, kill, and manage tmux sessions</description>
+    </item>
+    <item>
+      <title>Git Command Guide</title>
+      <link>http://localhost:1313/tech-blog/notes/bg/gitnote/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/bg/gitnote/</guid>
+      <description>Some common and useful git commands.</description>
+    </item>
+  </channel>
+</rss>

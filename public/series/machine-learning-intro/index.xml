@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning Intro on FlammingFrost&#39;s Learning Log</title>
+    <link>http://localhost:1313/tech-blog/series/machine-learning-intro/</link>
+    <description>Recent content in Machine Learning Intro on FlammingFrost&#39;s Learning Log</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Aug 2023 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tech-blog/series/machine-learning-intro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entropy, KL Divergence and Cross Entropy</title>
+      <link>http://localhost:1313/tech-blog/notes/ml-intro/cross-entropy/</link>
+      <pubDate>Tue, 22 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/ml-intro/cross-entropy/</guid>
+      <description>Cross entropy is a loss function used in classification problems. This post will introduce the definition and the intuition behind cross entropy.</description>
+    </item>
+    <item>
+      <title>How to Evaluate the Performance of ML Models</title>
+      <link>http://localhost:1313/tech-blog/notes/ml-intro/evaluate/</link>
+      <pubDate>Tue, 22 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/ml-intro/evaluate/</guid>
+      <description>Maching learning basically have 2 tasks: regression and classification. This post will introduce how to evaluate the performance of ML models in these 2 tasks.</description>
+    </item>
+    <item>
+      <title>Loss Functions</title>
+      <link>http://localhost:1313/tech-blog/notes/ml-intro/loss/</link>
+      <pubDate>Tue, 22 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tech-blog/notes/ml-intro/loss/</guid>
+      <description>Loss Functions define what a model learns. Different loss casts different focus on the model&amp;rsquo;s learning process.</description>
+    </item>
+  </channel>
+</rss>
