@@ -65,6 +65,8 @@ jobs:
         with:
           name: github-pages
           path: ./public
+      - name: Remove symlinks
+        run: find ./public -type l -exec rm {} \;
       - name: List uploaded artifacts
         run: ls -la ${{ runner.temp }}
       - name: Debug public directory
