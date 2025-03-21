@@ -146,8 +146,8 @@ layout = go.Layout(
 
 ## View My Interactive Chart
 
-<iframe src="plot/testplot.html" width="800" height="600" style="border:none;"></iframe>
+ddsfsdd
 
-ddsfs
+[Click here to view the chart](plot/testplot.html)
 
-[Click here to view the chart](plots/testplot.html)
+[View My Chart](plots/plot.html)

@@ -1,158 +1,69 @@
 ---
-title: Portfolio Project 2
-seo_title: Portfolio Project 2
-summary: Portfolio Project 2 is my second portfolio project.
-description: Portfolio Project 2 is my second portfolio project.
-slug: portfolio-project-2
-author: John Doe
+title: CodeQuest
+seo_title: CodeQuest
+summary: "CodeQuest: Lightweight Semantic Code Search for Efficient Retrieval"
+description: "CodeQuest: Lightweight Semantic Code Search for Efficient Retrieval"
+slug: codequest
+author: FlammingFrost
 
-draft: true
-date: 2020-02-20T03:52:30-05:00
+draft: false
+date: 2025-03-13
 lastmod: 
 expiryDate: 
 publishDate: 
 
-feature_image: website.jpg
-feature_image_alt: Website
+feature_image: framework.png
+feature_image_alt: CodeQuest framework
 
 project types: 
-    - Personal
+    - Course Project
 
 techstack:
-    - Hugo
-    - HTML/CSS
-    - JavaScript
-    - Netlify
-live_url: https://hugo-liftoff.netlify.app
-source_url: https://github.com/wjh18/hugo-liftoff
+    - LLM Distillation
+    - Quantization
+    - RAG
+# live_url: https://hugo-liftoff.netlify.app
+source_url: https://github.com/FlammingFrost/CodeQuest
 ---
 
-This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+# CodeQuest: Lightweight Semantic Code Search for Efficient Retrieval
 
-## Headings
+<p align="center">
+ Stanford CS 224N NLP with Deep Learning | Winter 2025 | Customized Project 
+</p>
 
-The following HTML `<h2>`—`<h6>` elements represent five levels of section headings. `<h2>` is the highest section level you should use in markdown while `<h6>` is the lowest. `<h1>` should be reserved for the page title.
+<p align="center">
+  Team Members: Lifan Lin, Selena Hong; Mentor: Johnny Chang
+</p>
 
-## H2
-### H3
-#### H4
-##### H5
-###### H6
+## Introduction
 
-## Paragraph
+In this work, we accelerate code retrieval by replacing a large embedding model with a more efficient, lightweight alternative for query encoding. Specifically, we explore distilling a large model trained for both code and query processing into a compact model optimized solely for embedding queries into the shared representation space with code.
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+You can access our final report [here](./report.pdf). Our work is planned to further extend to the [Puma](https://github.com/FlammingFrost/puma), a local lightweight RAG-based code search engine for codebases.
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+<p align="center">
+  <img src=".assets/framework-overview.png" alt="Framework">
+</p>
 
-## Blockquotes
+Our experiments demonstrate that this trade-off between model size and accuracy is feasible, introducing a smaller neural network that balances computational efficiency with retrieval effectiveness.
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+## Three Adaptations of Lightweight Embedding Model
 
-### Blockquote without attribution
+Our objective is to enhance the efficiency of code retrieval in RAG systems by replacing a large query encoder (the complete model) with a more lightweight alternative while maintaining retrieval effectiveness. Rather than embedding both natural-language queries and code snippets using the complete model, we distill the knowledge from the complete model into a smaller lightweight model (base model) with adaptation. This enables a reduction in computational cost without significantly compromising retrieval performance.
 
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use *Markdown syntax* within a blockquote.
+<p align="center">
+  <img src=".assets/external.png" alt="External Adaptation" width="45%">
+  <img src=".assets/internal.png" alt="Internal Adaptation" width="45%">
+</p>
 
-### Blockquote with attribution
+The main challenge of the lightweight-query dual-encoder system is that two models **embed into the same embedding space**, as embedding spaces of different encoders are intrinsically different. We explore three key adaptation strategies that have the potential to achieve our goal: compact adaptation, which quantizes the full model with lower precision to reduce inference computation and memory usage; external adaptation, which post-transforms the base model’s embeddings into the embedding space of the full model; internal adaptation, which modifies the base model directly through fine-tuning.
 
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
+## Experiments & Analysis
 
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
+We evaluate the effectiveness of the three adaptation strategies with extensive experiments. The following two figures show the t-SNE visualization of embeddings from adaptations and the approximated retrieval recall with respect to model complexity. It can be approximated that quantization, LoRA adaptation, and post-embedding refinement follow a log-linear relationship between computational cost and accuracy.
 
-## Tables
-
-Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
-
-   Name | Age
---------|------
-    Bob | 27
-  Alice | 23
-
-### Inline Markdown within tables
-
-| Italics   | Bold     | Code   |
-| --------  | -------- | ------ |
-| *italics* | **bold** | `code` |
-
-## Code Blocks
-
-### Code block with backticks
-
-```html
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
-```
-
-### Code block indented with four spaces
-
-    <!doctype html>
-    <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <title>Example HTML5 Document</title>
-    </head>
-    <body>
-      <p>Test</p>
-    </body>
-    </html>
-
-### Code block with Hugo's internal highlight shortcode
-
-{{< highlight html >}}
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
-{{< /highlight >}}
-
-## List Types
-
-### Ordered List
-
-1. First item
-2. Second item
-3. Third item
-
-### Unordered List
-
-* List item
-* Another item
-* And another item
-
-### Nested list
-
-* Fruit
-  * Apple
-  * Orange
-  * Banana
-* Dairy
-  * Milk
-  * Cheese
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+<p align="center">
+  <img src=".assets/tsne.png" alt="t-SNE Visualization" width="65%">
+  <img src=".assets/recall_vs_complexity.png" alt="Recall vs Complexity" width="25%">
+</p>

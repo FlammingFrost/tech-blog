@@ -63,3 +63,8 @@ about_page_socials = true
   twitter = true
   reddit = true
   email = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
