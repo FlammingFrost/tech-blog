@@ -50,10 +50,13 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Debug public directory
+        run: ls -la ./public
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
+          name: hugo-site
           path: ./public
 
   deploy:
@@ -66,3 +69,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+        with:
+          artifact-name: hugo-site
