@@ -63,10 +63,12 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: artifact
+          name: github-pages
           path: ./public
       - name: List uploaded artifacts
         run: ls -la ${{ runner.temp }}
+      - name: Debug public directory
+        run: ls -la ./public
 
   # Deployment job
   deploy:
@@ -78,6 +80,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
-        with:
-          artifact_name: artifact
+        uses: actions/deploy-pages@v2
